@@ -47,11 +47,14 @@ header nav a {
   color: var(--dk-text);
   text-decoration: none;
   margin: 10px;
+  padding: 3px;
+  border-radius: 8px;
 }
 
 header nav a:hover {
-  color: rgb(190, 45, 19);
+  color: var(--highlight);
   font-weight: bold;
+  box-shadow: inset 0 0 8px var(--highlight), 0 0 15px var(--highlight);
 }
 
 /* hero */
@@ -97,20 +100,24 @@ section div p {
 }
 
 /* work */
-h3 {
+section div h3 {
   color: var(--dk-text);
   background-color: rgb(211, 180, 6, .5);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
-section div a {
+section div h3:hover {
+  box-shadow: inset 0 0 8px var(--highlight), 0 0 15px var(--highlight);
+}
+
+/*section div a {
   display: flex;
   align-items: center;
   justify-content: left;
   text-decoration: none;
   color: var(--dk-text);
-}
+}*/
 
 .project-container {
   display: flex;
@@ -164,7 +171,7 @@ section div a {
 }
 
 .contact-item:hover {
-  box-shadow: inset 0 0 8px var(--lt-text), 0 0 15px var(--lt-text);
+  box-shadow: inset 0 0 8px var(--highlight), 0 0 15px var(--highlight);
 }
 
 
