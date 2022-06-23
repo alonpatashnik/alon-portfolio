@@ -97,13 +97,19 @@ section div p {
 }
 
 /* work */
+h3 {
+  color: var(--dk-text);
+  background-color: rgb(211, 180, 6, .5);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 section div a {
   display: flex;
   align-items: center;
   justify-content: left;
   text-decoration: none;
   color: var(--dk-text);
-  background-color: var(--lt-text);
 }
 
 .project-container {
@@ -160,7 +166,6 @@ section div a {
 .contact-item:hover {
   box-shadow: inset 0 0 8px var(--lt-text), 0 0 15px var(--lt-text);
 }
-
 
 
 
